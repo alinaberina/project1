@@ -4,12 +4,11 @@
     <meta charset="utf-8">
     <link rel="icon" href="https://indasil.club/uploads/posts/2022-12/1669982839_17-indasil-club-p-trafaret-obezyani-oboi-18.png" >
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<link rel="stylesheet" href="alrina.css">
+    <link rel="stylesheet" href="alrina.css">
     <title>About us</title>
   </head>
-  <body data-spy="scroll" data-target="#navbar" data-offset="72" class="position-relative">
+  <body data-spy="scroll" data-target="#navbar" data-offset="72" class="position-relative" id="snow-container">
     <header class="fixed-top page-header">
     <div class="container-fluid container-fluid-max">
       <nav id="navbar" class="navbar navbar-expand-lg navbar-dark">
@@ -41,6 +40,7 @@
               <i class="fas fa-envelope"></i>
               <div class="d-none d-xl-inline">alya.arya@mail.ru</div>
             </a>
+            <p id="select" onclick="darkLight()" style="cursor: help;">Включить тёмную тему</p>
           </div>
         </div>
       </nav>
@@ -60,6 +60,15 @@
         </div>
       </div>
     </section>
+    <div id="timer" aria-live="polite">
+      <h1 class="text-white">До Нового Года осталось</h1>
+      <div class="timer-container">
+        <span id="days" class="days" role="timer">0 days</span>
+        <span id="hours" class="days" role="timer">0 hours</span>
+        <span id="minutes" class="days" role="timer">0 minutes</span>
+        <span id="seconds" class="days" role="timer">0 seconds</span>
+      </div>
+    </div>
     <section id="process" class="process">
       <div class="container-fluid container-fluid-max">
         <div class="row text-center py-5">
@@ -144,7 +153,6 @@
             </span>
             <h3 class="mt-3 text-red h4">My social networks</h3>
             <p><b>INST:</b><a href="https://www.instagram.com/uh.honeey"> uh.honeey</a> <br>   <b>VK:</b><a href="https://vk.com/uh.honey"> Арина Ломаченко</a> <br><b>TELEGRAM:</b><a href="https://t.me/uhhoneey"> Арина </a></p>
-          
           </div>
           <div class="col-12 pt-3">
             <a class="btn bg-red text-white" target="_blank" href="https://geocult.ru/natalnaya-karta-onlayn-raschet?fn=Арина&fd=7&fm=9&fy=2004&fh=16&fmn=0&c1=Витебск%2C+Беларусь&ttz=20&tz=Europe%2FMinsk&tm=3&lt=55.1904&ln=30.2049&hs=P&sb=1" role="button">Узнать больше →</a>
@@ -152,6 +160,72 @@
         </div>
       </div>
     </section>
+    <section class="timeline">
+      <ol>
+        <li>
+          <div>
+            <time>31 мая 2023</time> День УИРа. Наконец мы смогли показать всё, что так долго и упорно готовили.
+          </div>
+        </li>
+        <li>
+          <div>
+            <time>25-26 июня 2023</time> Группой отметили конец летней сессии
+        </li>
+        <li>
+          <div>
+            <time>10-18 июля 2023</time> Приехали к Алине в Витебск на её День Рождения и заодно на Славянский Базара.
+          </div>
+        </li>
+        <li>
+          <div>
+            <time>8-10 августа 2023</time> Собрались своей небольшой компанией в Борисове на даче у нашей Кати!
+          </div>
+        </li>
+        <li>
+          <div>
+            <time>28 августа 2023</time> С горем пополам заселились в общагу спустя 10 часов сидения на чемоданах:)))
+          </div>
+        </li>
+        <li>
+          <div>
+            <time>10 сентября 2023</time> Чуточку с опозданием отметили День Рождения Арины.
+        </li>
+        <li>
+          <div>
+            <time>28-29 октября 2023 </time> Ночь кино Horror Mystery
+          </div>
+        </li>
+        <li>
+          <div>
+            <time>2 ноября 2023</time> Впервые за два года побывали в общежитии на Щорса, эмоции интересные.
+          </div>
+        </li>
+        <li>
+          <div>
+            <time>13 ноября 2023</time> С главными друзими сходили на хоррор квест ОНО. Слава богу мальчики за нас решили все загадки, а мы только шугались.
+          </div>
+        </li>
+        <li>
+          <div>
+            <time>25 ноября 2023</time> Посетили концерт nkeeei, uniqe & ARTEM SHILOVETS, успели подраться с альтушками за первые ряды.
+          </div>
+        </li>
+        <li>
+          <div>
+            <time>16 декабря 2023, 00:38</time> "Не видела Арину уже 2 минуты, так как она ушла мыться" пишет Алина...
+          </div>
+        </li>
+        <li></li>
+      </ol>
+          <div class="arrows">
+            <button class="arrow arrow__prev disabled" disabled>
+             <-
+            </button>
+            <button class="arrow arrow__next">
+              ->
+            </button>
+          </div>
+      </section>
     <section id="featured-destinations" class="featured-destinations bg-lightblue">
       <div class="row no-gutters">
         <div class="col-12 col-md-6 d-flex align-items-center order-1 order-md-0">
